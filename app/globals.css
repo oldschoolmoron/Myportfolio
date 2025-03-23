@@ -1,26 +1,51 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
+/* Define theme variables */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* 🎨 Custom Colors */
+  --color-lightHover: #fcf4ff;
+  --color-darkHover: #2a004a;
+  --color-darkTheme: #000000;
+
+  /* 🖋️ Custom Fonts */
+  --font-outfit: "Outfit", sans-serif;
+  --font-ovo: "Ovo", serif;
 }
 
+/* 🌙 Dark Mode Support */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: var(--color-darkTheme);
     --foreground: #ededed;
   }
 }
 
+/* ✨ Apply Theme */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-outfit);
+}
+
+/* Default Font */
+* {
+  font-family: var(--font-outfit);
+}
+
+/* Ovo Font */
+.font-ovo {
+  font-family: var(--font-ovo);
+}
+
+/* 🎨 Color Utility Classes */
+.light-hover {
+  background-color: var(--color-lightHover);
+}
+
+.dark-hover {
+  background-color: var(--color-darkHover);
+}
+
+.dark-theme {
+  background-color: var(--color-darkTheme);
 }

@@ -17,12 +17,10 @@
   --grid-cols-auto: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-/* 🌙 Dark Mode Support */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: var(--color-darkTheme);
-    --foreground: #ededed;
-  }
+/* 🌙 Dark Mode */
+.dark {
+  --background: var(--color-darkTheme);
+  --foreground: #ededed;
 }
 
 /* ✨ Apply Theme */

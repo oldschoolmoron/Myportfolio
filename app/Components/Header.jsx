@@ -2,7 +2,7 @@ import { assets } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 
-const Header = () => {
+const Header = ({isDarkMode}) => {
   return (
     <div className='w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4'>
       <div>
@@ -21,9 +21,9 @@ const Header = () => {
       I’m a passionate developer who loves building innovative and robust solutions. From smart contracts to full-stack applications, I thrive on creating secure, scalable, and impactful tech.
       </p>
       <div className='flex gap-4'>
-        <a href="#contact" className='px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2'>Hire me <Image src={assets.right_arrow_white} alt='' className='w-4'/></a> 
+        <a href="#contact" className='px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2'>Hire me <Image src={isDarkMode? assets.right_arrow_bold_dark:assets.right_arrow_white} alt='' className='w-4'/></a> 
 
-        <a href="/sample-resume.pdf" download className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2'>my resume <Image src={assets.download_icon} alt='' className='w-4'/></a>
+        <a href="/sample-resume.pdf" download className='px-10 py-3 border bg-white rounded-full border-gray-500 flex items-center gap-2 dark:text-black'>my resume <Image src={assets.download_icon} alt='' className='w-4'/></a>
       </div>
     </div>
   )

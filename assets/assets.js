@@ -78,23 +78,23 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
+        title: 'BoundLess X NFT',
+        description: 'NFT Marketplace',
         bgImage: '/work-1.png',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'Binance Clone',
+        description: 'Crypto Trading App',
         bgImage: '/work-2.png',
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
+        title: 'Crumble Labs',
+        description: 'Tech Solutions',
         bgImage: '/work-3.png',
     },
     {
         title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        description: 'Product Design',
         bgImage: '/work-4.png',
     },
 ]

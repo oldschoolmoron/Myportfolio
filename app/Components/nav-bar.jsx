@@ -58,11 +58,11 @@ const Navbar = () => {
               My work
             </a>
           </li>
-          <li>
-            <a className="font-ovo" href="#blog">
+          {/* <li>
+             <a className="font-ovo" href="#blog">
               Blog
             </a>
-          </li>
+          </li> */}
           <li>
             <a className="font-ovo" href="#contact">
               Contact
@@ -118,11 +118,11 @@ const Navbar = () => {
               My work
             </a>
           </li>
-          <li>
+          {/* <li>
             <a className="font-ovo" onClick={closeMenu} href="#blog">
               Blog
             </a>
-          </li>
+          </li> */}
           <li>
             <a className="font-ovo" onClick={closeMenu} href="#contact">
               Contact

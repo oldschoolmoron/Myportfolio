@@ -108,7 +108,7 @@ const Navbar = ({isDarkMode , setDarkMode}) => {
             <Image src={isDarkMode? assets.close_white: assets.close_black} alt='cross-icon' className="w-5 cursor-pointer" />
           </div>
           <li>
-            <a className="font-ovo" onClick={closeMenu} href="#home">
+            <a className="font-ovo" onClick={closeMenu} href="#top">
               Home
             </a>
           </li>

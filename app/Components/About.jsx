@@ -7,12 +7,12 @@ const About = ({isDarkMode}) => {
     <div id='aboutme' className='w-full px-[12%] py-10 scroll-mt-20 flex flex-col items-center justify-center'>
       <h4 className='text-center mb-2 text-lg font-ovo'>Introduction</h4>
       <h2 className='text-center text-5xl font-ovo'>About me</h2>
-      <div className='flex w-full flex-col lg:flex-row items-center gap-10 lg:gap-20 my-10 lg:my-20'>
+      <div className='flex w-full flex-col lg:flex-row items-center justify-center text-center lg:text-left gap-10 lg:gap-20 my-10 lg:my-20'>
 
         <div className='w-64 sm:w-80 rounder-3xl max-w-none'>
           <Image src={assets.profile_img} alt='profile-img' className='w-full h-full rounded-3xl'  />
         </div>
-        <div className='flex-1'>
+        <div className='flex-1 max-w-3xl'>
             <p className='mb-5 max-w-2xl font-ovo'>I am a Full-Stack Developer with 2.5 years of experience in building scalable solutions. I've worked with diverse teams, delivering seamless user experiences across frontend and backend. Passionate about innovation, I thrive where technology meets creativity.</p>
             <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
               {infoList.map(({icon,iconDark,title, description},index)=>(

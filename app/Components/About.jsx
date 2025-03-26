@@ -4,7 +4,7 @@ import React from 'react'
 
 const About = ({isDarkMode}) => {
   return (
-    <div id='aboutme' className='w-full px-[12%] py-10 scroll-mt-20'>
+    <div id='aboutme' className='w-full px-[12%] py-10 scroll-mt-20 flex flex-col items-center justify-center'>
       <h4 className='text-center mb-2 text-lg font-ovo'>Introduction</h4>
       <h2 className='text-center text-5xl font-ovo'>About me</h2>
       <div className='flex w-full flex-col lg:flex-row items-center gap-10 lg:gap-20 my-10 lg:my-20'>

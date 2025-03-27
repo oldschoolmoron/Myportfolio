@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import Image from "next/image";
 
 
-const Contact = () => {
+const Contact = ({isDarkMode}) => {
   const [result, setResult] = useState("");
 
   const onSubmit = async (event) => {
@@ -30,10 +30,10 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className='w-full px-[12%] py-10 scroll-mt-20 bg-[url("/footer-bg-color.png")] bg-no-repeat bg-center bg-[length:90%_auto]'
+      className={`w-full px-[12%] py-10 scroll-mt-20 bg-[url("/footer-bg-color.png")] bg-no-repeat bg-center bg-[length:90%_auto] ${isDarkMode ? "bg-none" : "" }`}
     >
-      <h4 className="text-center mb-2 text-lg font-ovo">Connect with me</h4>
-      <h2 className="text-center text-5xl font-ovo"> Get in touch</h2>
+      <h4 className="text-center mb-2 text-lg font-ovo">Get in Touch</h4>
+      <h2 className="text-center text-5xl font-ovo">let's Connect</h2>
       <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo">
         I'd love to hear from you! If you have any questions or would like to
         work together, please feel free to reach out.
@@ -44,24 +44,24 @@ const Contact = () => {
             type="text"
             placeholder="Enter your name"
             required
-            className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white" name="name"
+            className={`flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white" name="name ${isDarkMode ? "text-white" : " text-gray-600"}`}
           />
           <input
             type="text"
             placeholder="Enter your email"
             required
-            className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white" name="email"
+            className={`flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md ${isDarkMode ? "text-white" : " text-gray-600"}`} name="email"
           />
         </div>
         <textarea
           rows="6"
           placeholder="Enter your message"
           required
-          className="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6" name="message"
+          className={`w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md  mb-6 ${isDarkMode ? "text-white" : " text-gray-600"}`} name="message"
         ></textarea>
         <button
           type="submit"
-          className="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500"
+          className={`py-3 px-8 w-max flex items-center justify-between gap-2 rounded-full mx-auto duration-500 ${isDarkMode ? "bg-white text-black" : "bg-black text-white"}`}
         >
           Submit now
         </button>

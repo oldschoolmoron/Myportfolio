@@ -23,7 +23,7 @@ const Header = ({isDarkMode}) => {
       <div className='flex gap-4'>
         <a href="#contact" className='px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2'>Hire me <Image src={isDarkMode? assets.right_arrow_bold_dark:assets.right_arrow_white} alt='' className='w-4'/></a> 
 
-        <a href="/sample-resume.pdf" download className='px-10 py-3 border bg-white rounded-full border-gray-500 flex items-center gap-2 dark:text-black'>my resume <Image src={assets.download_icon} alt='' className='w-4'/></a>
+        <a href="/sample-resume.pdf" download className='px-10 py-3 border bg-white text-black  rounded-full border-gray-500 flex items-center gap-2'>my resume <Image src={assets.download_icon} alt='' className='w-4'/></a>
       </div>
     </div>
   )

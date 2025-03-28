@@ -53,7 +53,7 @@ const About = ({ isDarkMode }) => {
           className="flex-1 max-w-3xl"
         >
           <p className="mb-5 max-w-2xl font-ovo">
-            I am a Full-Stack Developer with 2.5 years of experience in building
+            I am a Full-Stack Developer with 2.8 years of experience in building
             scalable solutions. I've worked with diverse teams, delivering
             seamless user experiences across frontend and backend. Passionate
             about innovation, I thrive where technology meets creativity.

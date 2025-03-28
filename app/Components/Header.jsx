@@ -55,7 +55,7 @@ const Header = ({isDarkMode}) => {
   initial={{y: 30, opacity: 0}}
   whileInView={{y: 0, opacity: 1}}
   transition={{duration: 0.6, delay:1.2}}
-  href="/sample-resume.pdf" download 
+  href="/Myresume.pdf" download 
      className='px-6 sm:px-10 py-3 border bg-white text-black rounded-full border-gray-500 flex items-center gap-2 whitespace-nowrap min-w-[140px] text-center'>
     My resume 
     <Image src={assets.download_icon} alt='' className='w-4'/>

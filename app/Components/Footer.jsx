@@ -17,7 +17,7 @@ const Footer = ({isDarkMode}) => {
         <p>© 2025 Ananya Pathak. All rights reserved.</p>
         <ul className="flex items-center gap-6 justify-center mt-4 sm:mt-0">
         <li>
-          <a href="https://www.github.com/oldskoolmoron/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.github.com/oldschoolmoron/" target="_blank" rel="noopener noreferrer">
             <Github className="w-6 h-6 hover:text-gray-600 transition duration-300" />
           </a>
         </li>
